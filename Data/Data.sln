@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lotto", "Lotto\Lotto.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "List", "List\List.csproj", "{231AB122-C127-40F9-86B6-5F8F4010AFB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "LinkedList\LinkedList.csproj", "{FF41A28E-290D-4623-A2F4-C4E62148A9DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{83B71DEB-8B77-4DE4-8EC0-979B9F1BB60C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{231AB122-C127-40F9-86B6-5F8F4010AFB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{231AB122-C127-40F9-86B6-5F8F4010AFB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{231AB122-C127-40F9-86B6-5F8F4010AFB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF41A28E-290D-4623-A2F4-C4E62148A9DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF41A28E-290D-4623-A2F4-C4E62148A9DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF41A28E-290D-4623-A2F4-C4E62148A9DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF41A28E-290D-4623-A2F4-C4E62148A9DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83B71DEB-8B77-4DE4-8EC0-979B9F1BB60C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83B71DEB-8B77-4DE4-8EC0-979B9F1BB60C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83B71DEB-8B77-4DE4-8EC0-979B9F1BB60C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83B71DEB-8B77-4DE4-8EC0-979B9F1BB60C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

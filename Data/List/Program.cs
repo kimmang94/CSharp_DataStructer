@@ -101,6 +101,7 @@ namespace List
                 Console.WriteLine(comicList[i]);
             }
 
+            // 내림차순 정리
             comicList.Sort();
 
             for (int i = 0; i < comicList.Count; i++)
