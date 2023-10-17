@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_02_FlowControl", "Conditio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_03_Method", "Method\_03_Method.csproj", "{56190062-4EBA-485F-A429-396C395E28C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class", "Class\Class.csproj", "{7E0CF0D1-DD45-4B0C-ACE1-484FA1FB116D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_04_Class", "Class\_04_Class.csproj", "{7E0CF0D1-DD45-4B0C-ACE1-484FA1FB116D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface", "Interface\Interface.csproj", "{0B292B1D-740B-4A06-8D13-00627172FEC1}"
 EndProject
