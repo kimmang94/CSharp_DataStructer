@@ -13,12 +13,12 @@ namespace LINQ
         {
             Profile[] profiles = 
             { 
-            new Profile() { Name = "정우성", Height = 186 },
-            new Profile() { Name = "김태희", Height = 170 },
-            new Profile() { Name = "고윤정", Height = 162 },
-            new Profile() { Name = "한효주", Height = 172 },
-            new Profile() { Name = "이문세", Height = 170 },
-            new Profile() { Name = "강동원", Height = 192 }
+                new Profile() { Name = "정우성", Height = 186 },
+                new Profile() { Name = "김태희", Height = 170 },
+                new Profile() { Name = "고윤정", Height = 158 },
+                new Profile() { Name = "한효주", Height = 172 },
+                new Profile() { Name = "이문세", Height = 170 },
+                new Profile() { Name = "강동원", Height = 192 }
             };
 
 
