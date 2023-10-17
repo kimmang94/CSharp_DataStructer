@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B1C4DE29-FAAB-4F2B-B034-671B57D5CF60}</ProjectGuid>
+    <ProjectGuid>{7E0CF0D1-DD45-4B0C-ACE1-484FA1FB116D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lotto</RootNamespace>
-    <AssemblyName>Lotto</AssemblyName>
+    <RootNamespace>Class</RootNamespace>
+    <AssemblyName>Class</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
