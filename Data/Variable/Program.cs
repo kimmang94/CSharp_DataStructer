@@ -105,7 +105,16 @@ namespace Variable
     {
         static void Main(string[] args)
         {
-            
+            int leng = 10;
+            string one = "Hello";
+            string two = "World";
+
+            var stringBuilder = new StringBuilder(leng);
+            stringBuilder.Append(one);
+            stringBuilder.Append(two);
+
+            Console.WriteLine(stringBuilder);
+            Console.ReadLine();
         }
     }
 }
