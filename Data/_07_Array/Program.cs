@@ -87,6 +87,72 @@ namespace _07_Array
      *  Queue
      *      선입선출(FIFO : First In First Out) 구조의 자료구조
      *      데이터를 입력하는 Enqueue(), 출력하는 Dequeue() 메소드 제공
+     *      
+     *      
+     *  Stack
+     *      선입후출(FILO : First In Last Out) 구조의 자료구조
+     *      데이터를 입력하는 Push(), 출력하는 Pop() 메소드 제공
+     *      
+     *  HashTable
+     *      키(key)와 값(Value)으로 이루어진 데이터를 다룰 때 사용
+     *      키를 해싱(hasing)해서 테이블 내의 주소를 계산
+     *      배열처럼 다루기 간편하고 탐색속도도 빠름
+     *      
+     *      ex:
+     *      Hashtable ht = new Hashtable();
+     *      ht["book"] = "책";
+     *      ht["cook"] = "요리사";
+     *      ht["tweet"] = "지저귀다";
+     *      
+     *      Console.WriteLint(ht["book"]);
+     *      Console.WriteLint(ht["cook"]);
+     *      Console.WriteLint(ht["tweet"]);
+     *      
+     *  인덱서
+     *      인덱스(index)를 이용해서 객체 내의 데이터에 접근하게 해주는 프로퍼티
+     *      class 클래스이름
+     *      {   
+     *          한정자 인덱서형식 this[형식 index]
+     *          {
+     *              get
+     *              {   
+     *                  // index를 이용하여 내부 데이터 반환
+     *              }
+     *              set
+     *              {
+     *                  // index를 이용하여 내부 데이터 저장
+     *              }
+     *           }
+     *      }
+     *   ex:
+     *      class MyList
+     *      {
+     *          private int[] array;
+     *          
+     *          public MyList()
+     *          {
+     *              array = new int[3]; 
+     *          }
+     *          public int this[int index]
+     *          {
+     *              get 
+     *              {
+     *                  return array[index];
+     *              }
+     *              set
+     *              {
+     *                  if (index >= array.Length)
+     *                  {
+     *                      Array.Resize<int>(ref array, index + 1);
+     *                      Console.WriteLine("Array Resized : {0}", array.Length);
+     *                  }
+     *                  
+     *                  array[index] = value;
+     *              }
+     *              
+     *          }
+     *          
+     *      
      */
     internal class Program
     {
