@@ -98,6 +98,54 @@ namespace _15_FileIO
      *      IO에 있어 스트림은 데이터가 흐르는 통로 를 뜻함
      *      ex : 메모리에서 하드디스크로 데이터 전송시 스트림으로 둘 사이를 연결 후 데이터를 바이트 단위로 전송
      *      
+     *  파일에 대합 순차접근 (Sequential Access)
+     *      처음부터 끝까지 순서대로 읽고 쓰는 접근방식
+     *  
+     *  파일에 대한 임의접근 (Random Access)
+     *      파일 내의 임의의 위치에 있는 데이터에 즉시 접근하는 방식
+     *      
+     *  System.IO.Stream 클래스
+     *      입력 스트림, 출력 스트림의 역할을 모두 수행
+     *      순차접근방식과 임의접근 방식 모두 지원
+     *      단, 추상 클래스이기 떄문에 파생 클래스를 이용해야함
+     *      
+     *  System.IO.FileStream
+     *      ex : a.dat 파일에 long형식의 0x123456789ABCDEF0 작성
+     *      long someValue = 0x123456789ABCDEF0;
+     *      //1 파일 스트림 생성
+     *      Stream outStream = new FIleStream("a.dat", FildeMode.Create);
+     *      // 2. long형식을 byte배열로 변환
+     *      byte[] wBytes = BitCOnverter.GetBytes(someValue);
+     *      // 3. 변환한 byte배열을 파일 스트림을 통해 파일에 기록
+     *      outStream.Write(wBytes, 0, wBytes.Length);
+     *      // 4. 파일 스트림 닫기
+     *      outStream.Close();
+     *      
+     *      ex: a.dat 파일로부터 long 형식에 0x123456789ABCDEF0 읽기
+     *      byte[] rBytes = new byte[8];
+     *      // 1 파일 스트림 생성
+     *      Stream inStream = new FIleSTream("a.dat", FileMode.Open);
+     *      // 2 rByte의 길이만큼 데이터를 읽어 rBytes에 저장
+     *      inStream.Read(rBytes, 0, rBytes.Length);
+     *      // 3 BitConverter를 이용하여 rBytes에 담겨있는 값을 long 형식으로 변환
+     *      long readValue = BitConverter.ToInt64(rbytes, 0);
+     *      // 4 파일 스트림 닫기
+     *      inStream.Close();
+     *      
+     *  이진 파일 쓰기 BinaryWriter
+     *      byte/byte배열 형식으로 변환 없이 이진 데이터 기록 지원
+     *      Stream의 파생 클래스(e.g FileStream)와 함께 사용
+     *      var fsw = new FileStream ("a.dat, FIleMode.Create);
+     *      BinaryWriter bw = new BinaryWriter(fsw);
+     *      
+     *      bw.Write(int MaxValue);
+     *      bw.Write("Good Morning!");
+     *      bw.Write(uint.MaxValue);
+     *      bw.Write("안녕하세요");
+     *      bw.Write(double.MaxValue);
+     *      bw.Close();
+     *      
+     *  
      */
     internal class Program
     {
