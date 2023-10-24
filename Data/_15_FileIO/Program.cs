@@ -145,7 +145,19 @@ namespace _15_FileIO
      *      bw.Write(double.MaxValue);
      *      bw.Close();
      *      
-     *  
+     *  이진 파일 읽기 BinaryReader
+     *      byte,byte 배열 형식으로 변환 없이 이진 데이터 읽기 지원
+     *      Stream의 파생클래스(eg.FileStream)와 함께 사용
+     *      
+     *      ex:
+     *      BinaryReader br = new Binary(new FileStream("a.dat", FileMode.Open);
+     *      int a = br.ReadInt32();
+     *      string b = br.ReadString();
+     *      uint c = br.ReadUInt32();
+     *      string d = br.ReadString();
+     *      int  e = br.ReadDouble();
+     *      
+     *      br.Close();
      */
     internal class Program
     {
